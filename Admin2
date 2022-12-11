@@ -1,0 +1,40 @@
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.*;
+class Admin2 extends JPanel
+{
+	JButton b1,b2,b3,b4,b5;
+	JLabel l1;
+	Admin2(FDemo f)
+	{
+		setLayout(null);
+		
+		Font f1=new Font("Arial Black",Font.ITALIC,40);
+		setFont(f1);
+		
+		l1=new JLabel("ADMIN");
+		l1.setBounds(600,100,400,100);
+		l1.setFont(f1);
+		add(l1);
+		
+		b1=new JButton("COURSE RESULTS");
+		b1.setBounds(600,200,200,80);
+		add(b1);
+		
+		b2=new JButton("VERIFICATION");
+		b2.setBounds(600,300,200,80);
+		add(b2);
+		
+		b3=new JButton("MANAGE COURSES");
+		b3.setBounds(600,400,200,80);
+		add(b3);
+		
+		b4=new JButton("USERS");
+		b4.setBounds(600,500,200,80);
+		add(b4);
+		
+		b4=new JButton("BACK");
+		b4.setBounds(750,100,200,30);
+		add(b4);
+	}
+}
